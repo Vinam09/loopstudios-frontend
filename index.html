@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -11,10 +12,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
 
+  <script defer src= "index.js"  type="text/javascript"></script>
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
+
 <body>
+
+ <div id="ham-menu">
+   <div class="ham-menu-flex">
+     <div class="nav-logo">
+       <img src="images/logo.svg" alt="Logo">
+     </div>
+     <div class="ham-menu-close">
+       <img id="close-img" src="images/icon-close.svg" alt="Close Menu">
+     </div>
+   </div>
+   <div class ="ham-menu-ul">
+     <ul>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Careers</a></li>
+       <li><a href="#">Events</a></li>
+       <li><a href="#">Products</a></li>
+       <li><a href="#">Support</a></li>
+     </ul>
+   </div>
+ </div>
 
   <section id="landing">
     <nav>
@@ -22,13 +46,18 @@
         <img src="images/logo.svg" alt="Logo">
       </div>
       <div class="nav-menu">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
+        <div class ="nav-menu-ul">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="nav-menu-hamburger">
+          <img id="hamburger-img" src="images/icon-hamburger.svg" alt="Menu Button">
+        </div>
       </div>
     </nav>
     <div class="head-title">
@@ -39,13 +68,17 @@
   <section id="main-content">
 
     <div class="leader-div">
-      <img src="images/desktop/image-interactive.jpg" alt="VR Image">
+
+      <div class="leader-div-img">
+        <img src="images/desktop/image-interactive.jpg" alt="VR Image">
+      </div>
+
       <div class="leader-div-text">
         <h2>THE LEADER IN INTERACTIVE VR</h2>
         <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
-        projects for some of the best companies around the globe. Our award-winning
-        creations have transformed businesses through digital experiences that bind
-        to their brand.</p>
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.</p>
       </div>
     </div>
 
@@ -62,81 +95,84 @@
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-deep-earth.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-deep-earth.jpg">
           <img src="images/mobile/image-deep-earth.jpg" alt="Deep Earth">
         </picture>
-        <div class="overlay"></div>
         <h3>DEEP EARTH</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-night-arcade.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-night-arcade.jpg">
           <img src="images/mobile/image-night-arcade.jpg" alt="Night Arcade">
         </picture>
-        <div class="overlay"></div>
         <h3>NIGHT ARCADE</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-soccer-team.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-soccer-team.jpg">
           <img src="images/mobile/image-soccer-team.jpg" alt="Soccer Team">
         </picture>
-        <div class="overlay"></div>
         <h3>SOCCER TEAM VR</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-grid.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-grid.jpg">
           <img src="images/mobile/image-grid.jpg" alt="The Grid">
         </picture>
-        <div class="overlay"></div>
         <h3>THE GRID</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-from-above.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-from-above.jpg">
           <img src="images/mobile/image-from-above.jpg" alt="From Above">
         </picture>
-        <div class="overlay"></div>
         <h3>FROM UP ABOVE VR</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-pocket-borealis.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-pocket-borealis.jpg">
           <img src="images/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis">
         </picture>
-        <div class="overlay"></div>
         <h3>POCKET BOREALIS</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-curiosity.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-curiosity.jpg">
           <img src="images/mobile/image-curiosity.jpg" alt="The Curiosity">
         </picture>
-        <div class="overlay"></div>
         <h3>THE CURIOSITY</h3>
+
       </div>
 
       <div class="creations-img">
         <picture>
-          <source media="(min-width: 750px)" srcset = "images/desktop/image-fisheye.jpg">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-fisheye.jpg">
           <img src="images/mobile/image-fisheye.jpg" alt="Make It Fisheye">
         </picture>
-        <div class="overlay"></div>
         <h3>MAKE IT FISHEYE</h3>
+
       </div>
 
+    </div>
+    <div class="see-all-2">
+      <button type="button" name="button">SEE ALL</button>
     </div>
 
   </section>
 
-  <footer>
+  <footer id="foot">
     <div class="footer-flex-1">
       <div class="footer-logo">
         <img src="images/logo.svg" alt="Logo">
@@ -167,9 +203,10 @@
   </footer>
 
 
-  <div class="attribution">
+  <div id="attr" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Vinam Tuteja</a>.
   </div>
 </body>
+
 </html>
